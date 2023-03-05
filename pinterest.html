@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pinterest.css">
+    <title>Pinterest</title>
+</head>
+
+<body>
+
+    <div class="menu">
+        <img draggable="false" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png"
+            alt="">
+        <a href="#" class="home">Home</a>
+        <input id="one" type="text" class="search-bar" placeholder="Search">
+        <button id="two" class="search-bar">
+        </button>
+        <div class="icon-container">
+            <img src="https://img.favpng.com/21/10/10/bell-logo-png-vector-png-favpng-kMy4M5nfMsW1Hwfgz7aTWThca.jpg"
+                tabindex="1" draggable="false" class="icon bell">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa_N4oy_mtPibPQc6AG7CUiuwDwaCgdSZqLKEgRcBHllWKmzkT64jvANSn07-FVlEB9KE&usqp=CAU"
+                tabindex="1" draggable="false" class="icon message">
+            <img src="https://icon-library.com/images/account-icon/account-icon-5.jpg" tabindex="1" draggable="false"
+                class="icon pp">
+            <img src="https://static.vecteezy.com/system/resources/previews/006/827/566/non_2x/down-arrow-icon-sign-symbol-logo-vector.jpg"
+                tabindex="1" draggable="false" class="icon btn">
+
+            <div tabindex="1" class="focus-bar bell-bar">nothing</div>
+            <div tabindex="1" class="focus-bar message-bar">you are alone</div>
+            <div tabindex="1" class="focus-bar pp-bar"><img
+                    src="https://i.pinimg.com/236x/34/10/8c/34108c4e30d2c91944f8db2651798cc3.jpg" alt=""></div>
+            <div tabindex="1" class="focus-bar btn-bar">nothing</div>
+
+        </div>
+    </div>
+
+    <div class="responsive-search-bar">
+        <input type="text">
+        <p class="close">X</p>
+    </div>
+
+    <div class="container">
+        <div class="window">
+            <img class="foto" src="https://i.pinimg.com/236x/af/e9/55/afe95540b20295ae7fd58cf9d11fd8b2.jpg" alt="">
+            <p class="content">Follow me</p>
+            <img class="user" src="https://i.pinimg.com/236x/8c/ea/2c/8cea2c1d4385bde0890c0b3453a3f01c.jpg" alt="">
+            <a href="#" class="username">bsjdfkegn</a>
+
+            <div class="hover-zone">
+                <div class="top-bar">
+                    <p>Profile\/</p>
+                    <a>Save</a>
+                </div>
+                <div class="bottom-bar">
+                    <a>website.com</a>
+                    <div class="radius-ico">
+                        <img draggable="false"
+                            src="data:image/png;base64,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"
+                            alt="">
+                        <img draggable="false"
+                            src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/more-512.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window">
+            <img class="foto" src="https://i.pinimg.com/236x/af/e9/55/afe95540b20295ae7fd58cf9d11fd8b2.jpg" alt="">
+            <p class="content">Follow me</p>
+            <img class="user" src="https://i.pinimg.com/236x/8c/ea/2c/8cea2c1d4385bde0890c0b3453a3f01c.jpg" alt="">
+            <a href="#" class="username">bsjdfkegn</a>
+
+            <div class="hover-zone">
+                <div class="top-bar">
+                    <p>Profile\/</p>
+                    <a>Save</a>
+                </div>
+                <div class="bottom-bar">
+                    <a>website.com</a>
+                    <div class="radius-ico">
+                        <img draggable="false"
+                            src="data:image/png;base64,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"
+                            alt="">
+                        <img draggable="false"
+                            src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/more-512.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="window">
+            <img class="foto" src="https://i.pinimg.com/236x/af/e9/55/afe95540b20295ae7fd58cf9d11fd8b2.jpg" alt="">
+            <p class="content">Follow me</p>
+            <img class="user" src="https://i.pinimg.com/236x/8c/ea/2c/8cea2c1d4385bde0890c0b3453a3f01c.jpg" alt="">
+            <a href="#" class="username">bsjdfkegn</a>
+
+            <div class="hover-zone">
+                <div class="top-bar">
+                    <p>Profile\/</p>
+                    <a>Save</a>
+                </div>
+                <div class="bottom-bar">
+                    <a>website.com</a>
+                    <div class="radius-ico">
+                        <img draggable="false"
+                            src="data:image/png;base64,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"
+                            alt="">
+                        <img draggable="false"
+                            src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/more-512.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="window">
+            <img class="foto" src="https://i.pinimg.com/236x/af/e9/55/afe95540b20295ae7fd58cf9d11fd8b2.jpg" alt="">
+            <p class="content">Follow me</p>
+            <img class="user" src="https://i.pinimg.com/236x/8c/ea/2c/8cea2c1d4385bde0890c0b3453a3f01c.jpg" alt="">
+            <a href="#" class="username">bsjdfkegn</a>
+
+            <div class="hover-zone">
+                <div class="top-bar">
+                    <p>Profile\/</p>
+                    <a>Save</a>
+                </div>
+                <div class="bottom-bar">
+                    <a>website.com</a>
+                    <div class="radius-ico">
+                        <img draggable="false"
+                            src="data:image/png;base64,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"
+                            alt="">
+                        <img draggable="false"
+                            src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/more-512.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="window">
+            <img class="foto" src="https://i.pinimg.com/236x/af/e9/55/afe95540b20295ae7fd58cf9d11fd8b2.jpg" alt="">
+            <p class="content">Follow me</p>
+            <img class="user" src="https://i.pinimg.com/236x/8c/ea/2c/8cea2c1d4385bde0890c0b3453a3f01c.jpg" alt="">
+            <a href="#" class="username">bsjdfkegn</a>
+
+            <div class="hover-zone">
+                <div class="top-bar">
+                    <p>Profile\/</p>
+                    <a>Save</a>
+                </div>
+                <div class="bottom-bar">
+                    <a>website.com</a>
+                    <div class="radius-ico">
+                        <img draggable="false"
+                            src="data:image/png;base64,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"
+                            alt="">
+                        <img draggable="false"
+                            src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/more-512.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="window">
+            <img class="foto" src="https://i.pinimg.com/236x/af/e9/55/afe95540b20295ae7fd58cf9d11fd8b2.jpg" alt="">
+            <p class="content">Follow me</p>
+            <img class="user" src="https://i.pinimg.com/236x/8c/ea/2c/8cea2c1d4385bde0890c0b3453a3f01c.jpg" alt="">
+            <a href="#" class="username">bsjdfkegn</a>
+
+            <div class="hover-zone">
+                <div class="top-bar">
+                    <p>Profile\/</p>
+                    <a>Save</a>
+                </div>
+                <div class="bottom-bar">
+                    <a>website.com</a>
+                    <div class="radius-ico">
+                        <img draggable="false"
+                            src="data:image/png;base64,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"
+                            alt="">
+                        <img draggable="false"
+                            src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/more-512.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="pinterest.js"></script>
+</body>
+
+</html>
