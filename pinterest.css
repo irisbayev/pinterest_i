@@ -24,6 +24,7 @@ img{
     padding: 10px;
     font-weight: bold;
     background: white;
+    z-index: 100;
 }
 .menu a{
     text-decoration: none;
@@ -199,13 +200,16 @@ padding: 7px;
     background: #ffff;
     box-shadow: 0 0 2px 0 #333;
 }
+
+
+
 .container-fluid{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
+} 
 .window{
     border-radius: 20px;
     margin: 10px;
